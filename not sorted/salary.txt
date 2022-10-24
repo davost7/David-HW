@@ -1,0 +1,31 @@
+//----START
+
+var salary = 50000;
+var texDue = 0;
+var tex1 = 25000 * 0.1;
+var tex2 = 25000 * 0.2;
+var tex3 = 50000 * 0.3;
+var tex4 = 50000 * 0.4;
+
+if (salary < 25000) {
+    texDue = salary * 0.1
+
+} else if (salary < 50000) {
+    texDue = tex1 + (salary - 25000) * 0.2
+
+} else if (salary < 100000) {
+    texDue = tex1 + tex2 + (salary - 50000) * 0.3
+
+} else if (salary < 150000) {
+    texDue = tex1 + tex2 + tex3 + (salary - 100000) * 0.4
+} else {
+    texDue = tex1 + tex2 + tex3 + tex4 + (salary - 150000) * 0.5
+}
+
+
+
+var message = `Hi, your tex for this year is ${texDue}.`
+
+alert(message)
+
+//----STOP-----

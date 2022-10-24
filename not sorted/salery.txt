@@ -1,0 +1,20 @@
+var taxDue = 0
+ var tax1 = 0
+ var tax2 = 0
+ var tax3 = 0
+
+
+ if(salary < 25000) {
+    tax1 = salary * 0.1
+ } else if ( salary < 50000) {
+    tax2 = tax1 + (salary - 25000) * 0.2
+
+במקום לכתוב ככה: (בשורה האחרונה). 
+אני חושב שאי אפשר כיוון שאם ההכנסה היא גדולה מ25000, היא תדלג לשני
+ולא תכנס לראשון, אז לא יהיה אפשר להשתמש בtaxDue הקודם. 
+
+ if(salary < 25000) {
+    taxDue = salary * 0.1
+ } else if ( salary < 50000) {
+    taxDue = salary * 0.1 + (salary - 25000) * 0.2
+ }

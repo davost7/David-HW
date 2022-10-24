@@ -1,0 +1,48 @@
+////----START-----
+var month = 1;
+var rent = 5000;
+var balance = 2000;
+var salary = balance;
+var situation = "theft"
+var theAmount = 0;
+var rentDue = 0;
+
+balance += salary;
+
+if (balance >= rent) {
+  balance -= rent;
+} else {
+  rentDue = rent;
+}
+
+month++;
+balance += salary / 2;
+
+if (balance >= rentDue) {
+  balance -= rentDue;
+  rentDue = 0;
+}
+
+rent += 200;
+if (balance >= rent) {
+  balance -= rent;
+} else {
+  rentDue += rent;
+}
+month++;
+balance -= 500;
+theAmount = balance;
+balance = 0;
+
+if(theAmount < 0) {
+    situation = "gift";
+    theAmount *= -1;
+}
+
+var message = `The current month is number ${month}.
+The amount of money I owe my landlord is $${rentDue}.
+In my account there was a ${situation} for the amount of $${theAmount}.`;
+
+alert(message);
+
+//----STOP-----

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <header></header>
+   <main>
+		<section id="hero">
+			<h1 contenteditable>Welcome to the world's finest Full-Stack Group</h1>
+		</section>
+		<section id="family">
+			<h3>Here is my family members</h3>
+			<table>
+				<thead>
+					<tr>
+						<th>ID</th>
+						<th>full-name</th>
+						<th>Email</th>
+						<th>Phone</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>123456</td>
+						<td>David Ost</td>
+						<td>ost@gmail.com</td>
+						<td>7367285478</td>
+					</tr>
+					<tr>
+						<td>789101</td>
+						<td>joh Ost</td>
+						<td>joh@gmail.com</td>
+						<td>7862896547</td>
+					</tr>
+					<tr>
+						<td>112131</td>
+						<td>avi Ost</td>
+						<td>avi@gmail.com</td>
+						<td>74654989467</td>
+					</tr>
+				</tbody>
+				<tfoot>
+				
+				</tfoot>
+			</table>
+		</section>
+		<section id="fav-sites">
+			<iframe src="" frameborder="0"></iframe>
+			<iframe
+			 width="560" 
+			 height="315" 
+			 src="https://www.youtube.com/embed/ExltDReEdno" 
+			 frameborder="0"></iframe>
+			 <div>
+				<audio controls src="../Day_1/assets/audio/eli.mp3"></audio>
+				<video controls src="https://www.youtube.com/embed/ExltDReEdno"></video>
+			 </div>
+		</section>
+   </main>
+   <footer>
+    <section>
+        <form id="contact-form" action="https://www.promermedia.com">
+            <div class="form-elem">
+                <label for="">Enter your name</label>
+                <input required type="text" name="full-name" placeholder="e.g David" />
+            </div>
+            <div class="form-elem">
+                <label for="">Enter your age</label>
+                <input type="number" name="age" placeholder="e.g 21" />
+            </div>
+            <div class="form-elem">
+                <label for="">Enter your email</label>
+                <input required type="email" name="email" />
+            </div>
+            <div class="form-elem">
+                <label for="">Enter your password</label>
+                <input required type="password" name="password" />
+            </div>
+            <div class="form-elem">
+                <label for="over20">Are you over 20?</label>
+                <input id="over20" name="over20" type="checkbox">
+            </div>
+            <div class="form-elem">
+                <p>Select your city</p>
+                <input type="radio" name="city" value="1"id="city-lon"/>
+                <label for="city-lon">London</label>
+                <input type="radio" name="city" value="2"id="city-man"/>
+                <label for="city-man">Manchester</label>
+                <input type="radio" name="city" value="3"id="city-liv"/>
+                <label for="city-liv">Liverpool</label>
+            </div>
+            <div class="form-elem">
+                <label for="">Enter your Birthday</label>
+                <input name="DOB" type="date" />
+            </div>
+            <div class="form-elem">
+                <label for="">Enter your Favorite color</label>
+                <input name="color" type="color">
+            </div>
+            <div class="form-elem">
+                <label for="">Distance to Location</label>
+                <input name="Distance" type="range" min="0" max="10" />
+            </div>
+            <div>
+                <label for="">What kind of pet do you have</label>
+                <select name="pet" id="">
+                    <option value="n/a"></option>
+                    <option value="n/a">--I don't have a pet--</option>
+                    <option value="1">Cat</option>
+                    <option value="2">Fish</option>
+                    <option value="3">Rabbit</option>
+                    <option selected value="4">Guinea pig</option>
+                </select>
+            </div>
+            <div class="form-elem">
+                <label for="">Enter your car make</label>
+                <input type="text" value="car makes" name="car" list="car-makes">
+                <datalist id="car-makes">
+                    <option value="--I don't Drive--">
+                    <option value="BMW">
+                    <option value="Audi">
+                    <option value="Bently">
+                    <option value="Range Rover">
+                </datalist>
+            </div>
+            <div class="form-elem">
+               <div><label for="">Enter a short message</label></div>
+                <textarea name="" id="" cols="50" rows="5"></textarea>
+            </div>
+            <div class="form-elem">
+                <input type="submit" value="SUBMIT YOUR FORM">
+            </div>
+        </form>
+    </section>
+    <section>
+
+    </section>
+   </footer> 
+</body>
+</html>

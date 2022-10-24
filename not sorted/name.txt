@@ -1,0 +1,25 @@
+var text = prompt("Enter yout name") // string
+  .toUpperCase() // string
+  .replaceAll(" ", "") // string
+  .split("") // array
+  .sort(); // array
+
+function buildMeAndObject(char) {
+  const obj = {};
+  obj.letter = char;
+  obj.qty = 1;
+  return obj;
+}
+
+const FinalArray = [];
+FinalArray.push(buildMeAndObject(text[0]));
+
+for (let i = 1; i < text.length; i++) {
+  const letter = text[i];
+  let lastObj = FinalArray[FinalArray.length - 1];
+  letter == lastObj.letter
+    ? lastObj.qty++
+    : FinalArray.push(buildMeAndObject(letter));
+}
+
+console.log(FinalArray);

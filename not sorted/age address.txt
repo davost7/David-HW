@@ -1,0 +1,23 @@
+////----START-----
+var access = 0;
+var age = 1;
+var address = 5;
+
+if (age > address) {
+    access = true;
+} else if (age > address / 2) {
+    address = address / 2;
+    access = true;
+} else if (age > address / 3 || age % 2 == 0 ) {
+    address = address / 3;
+    access = true;
+} else {
+    access = "Sorry you have no access"
+}
+
+
+var message = access
+
+alert (message);
+
+//----STOP-----

@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*:root {
+
+}*/
+
+header {
+    display: flex;
+    background-color: black;
+    /*position: fixed;
+    top: 0;
+    width: 100%;*/
+}
+
+.header-divs {
+    width: 25%;
+    padding: 10px;
+    text-align: center;
+}
+
+.header-divs:nth-child(3) {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#logo {
+    width: 100px;
+}
+
+#nav {
+    width: 50%;
+
+    padding: 10px;
+}
+
+i {
+    color: yellow;
+    cursor: pointer;
+    font-size: 50px;
+}
+
+
+#menu {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: space-evenly;
+    height: 100%;
+}
+
+a {
+    font-size: 25px;
+    text-decoration: none;
+}
+
+/*#menu-cont {
+    width: 50%;
+    background-color: gray;
+    padding:
+}*/
+
+section {
+    height: 100vh;
+    overflow-y: auto;
+
+}
+
+#hearo {
+    padding: 100px;
+    background-image: url(http://drive.google.com/uc?export=view&id=1MaJQuHJHSqczOM1OH611GVFXaYV9c-V3);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#hearo>h1 {
+    font-size: 50px;
+    padding: 30px;
+    background-color: rgba(26, 69, 1, 0.738);
+    color: white;
+    width: 50%;
+    margin: 0 auto;
+}
+
+#about-us {
+    background-color: rgb(86, 194, 224);
+}
+
+#grid {
+    background-color: rgb(86, 194, 224);
+    display: grid;
+    grid-template-columns: repeat(3, 200px);
+    grid-template-rows: repeat(3, 200px);
+    gap: 15px;
+    padding: 15px;
+    margin: 20px auto;
+    justify-content:center ;
+}
+
+.grid-elem {
+    background-color: rgb(93, 199, 139);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 15px;
+    padding: 5%;
+}
+
+.grid-elem-mini {
+background-color: rgb(255, 255, 255);
+}
+
+
+
+
+
+
+
+
+
+
+
+/*main {
+    height: 100vh;
+    background-color: black;
+}
+
+section {
+    background-color: yellow;
+    padding: 50px;
+}
+
+div {
+    background-color: green;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    flex-wrap: wrap;
+}
+
+p {
+    padding: 10px;
+    width: 20%;
+    background-color: white;
+}
+
+p:first-child {
+    color: red;
+}*/

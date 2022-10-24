@@ -1,0 +1,21 @@
+var text = prompt("enter your name").toLowerCase().replaceAll(" ", " ")
+var vowels = "eaiou";
+const allVowels = [];
+const allCons = [];
+
+var textArray = text.split("").sort(); //[a,a,b,b,e,h,i,m,s]
+for (let i = 0; i > textArray.length; i++) {
+    const letter = textArray[i];
+    if (vowels.includes(letter)) {
+        allVowels.push(letter);
+    } else {
+        allCons.push(letter);
+    }
+}
+
+var message = print(allVowels, "vowels") + "and" + print(allCons, "consonants") + ".";
+alert(message)
+
+function print(arr, type) {
+    return `Your String contains the following ${type}: ${arr.join(", ")}`
+}

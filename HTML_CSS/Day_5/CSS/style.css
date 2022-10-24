@@ -1,0 +1,65 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#board {
+    display: grid;
+    width: 100vh;
+    height: 100vh;
+    background-color: black;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+}
+
+.red {
+    background-color: red;
+}
+
+
+/*(remove)  main {
+    background-image: url(../assets/20220821_144903.jpg);
+   /* display: flex;
+    justify-content: center;
+    align-items: center;*/
+   /* height: /*100vh*/  /*(remove)  50vh;  /*(Remove)
+    background-size: cover;
+}
+
+/*div {
+    display: flex;
+    background-color: rgba(50, 193, 50, 0.451);
+    width: 100px;
+    height:100px ;
+    justify-content: center;
+    align-items: center;
+    color: aquamarine;
+    font-size: 5rem;
+    position: absolute;
+}*/
+
+/*img {
+    display: flex;
+    height: 50%;
+}*/
+
+/*(remove)  section {
+    background-color: red;
+   /* color: rgba(240, 255, 255, 0.459);
+    font-size: 5rem;
+    padding-bottom: 5px;
+    position: relative;
+    bottom: 2px;*/
+  /*(remove)  height: 50vh;
+    position: relative;
+}
+
+p {
+    color: white;
+    font-size: 5rem;
+   position: absolute;
+   top: 25%;
+    
+}*/
+

@@ -1,0 +1,31 @@
+const stud = ["david", "meir", "aron", "moshe", "shimon"];
+var fullName = "David Ost";
+var sLth = stud.length // 5
+var fnLth = fullName.length // 9
+
+for (let i = 0; i < 5; i++ ) {
+
+}
+stud = prompt("name")
+stud.push()
+stud.sort()
+stud.join()
+stud.prompt()
+//Cars.splice(2, 3)
+console.log(stud)
+alert(stud.sort().join(","))
+
+const stud = []; //
+for (let i = 0; i < 5; i++){
+    stud.push(prompt("Enter the name for studernt" + (i + 1)))
+}
+
+
+
+
+function sortAndPrint() {
+    var text = arr.sort().reverse().join(",")
+    alert(`"The ${arr.length} ${role} are ${text}.`)
+}
+
+sortAndPrint(stud)

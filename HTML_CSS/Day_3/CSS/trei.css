@@ -1,0 +1,40 @@
+*{
+    font-size: 20px;
+    padding: 0;
+    margin: 0;
+    font-weight: normal;
+    box-sizing: border-box;
+}
+:root{
+    font-size: 20px;
+}
+
+div {
+    background-color: rgb(28, 186, 31);
+    color: rgb(208, 18, 18);
+    width: 50%;
+    font-size: 0.75rem;
+
+}
+
+h1 {
+    background-color: rgb(210, 238, 120);
+    height: 50%;
+    font-size: 5rem;
+    border: 20px dotted palevioletred;
+}
+
+section,
+main {
+        width: 50%;
+        height: 50vh;
+        background-color: brown;
+        float: left;
+}
+
+main {
+    font-size: 2em;
+}
+h2 {
+    font-size: 1em;
+}

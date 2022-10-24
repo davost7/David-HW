@@ -1,0 +1,70 @@
+//----START-----
+
+var month = 1;
+var rent = NaN;
+var balance = NaN
+
+while(isNaN(rent)) {
+rent = prompt("please enter you rent amount")
+rent = parseInt(rent);
+}
+
+rent = rent.toString()
+
+
+while (isNaN(balance)) {
+
+balance = prompt("please enter how much you acount")
+balance= parseInt(balance)
+}
+var salary = balance;
+var situation = "theft"
+var theAmount = 0;
+var rentDue = 0;
+
+balance += salary
+
+
+if (balance >= rent) {
+    balance -= rent
+} else {
+    rentDue = rent
+}
+
+month ++;
+ balance += salary / 2
+
+if (balance >= rentDue) {
+    balance -= rentDue
+    rentDue = 0
+} 
+
+rent += 200;
+if(balance>= rent) {
+    balance -= rent;
+} else {
+    rentDue += rent
+}
+
+month++;
+balance -= 500;
+theAmount = balance;
+balance= 0;
+
+if(theAmount < 0) {
+    situation = "gift"
+    theAmount *= -1;
+}
+
+var message = `The Current month is number ${month}.
+The amount of money I owe my landlord is ${rentDue}.
+In  my account there was a ${situation}. `
+
+
+
+
+alert(message);
+
+
+
+//----STOP-----

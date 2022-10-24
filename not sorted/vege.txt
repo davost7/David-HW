@@ -1,0 +1,12 @@
+var vegetarien = true;
+var menu = "";
+
+if (vegetarien !== true) {
+    menu = "salad";
+} else {
+    menu = "steak";
+}
+
+var message = menu;
+
+alert (message)
