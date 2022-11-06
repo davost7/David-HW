@@ -1,0 +1,24 @@
+* {
+    padding: 0;
+    margin: 0;
+    display: 0;
+    box-sizing: border-box;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.each-product {
+    border: 2px solid purple;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 300px;
+
+}
+
+img {
+    margin: 20px;
+}
