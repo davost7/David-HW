@@ -1,0 +1,14 @@
+main {
+    display: flex;
+    justify-content: space-between;
+}
+
+section {
+    background-color: black;
+    display: grid;
+    width: 750px;
+    height: 750px;
+    gap: 10px;
+    grid-template-columns: repeat(10 ,1fr);
+    grid-template-rows: repeat(10, 1fr);
+}
