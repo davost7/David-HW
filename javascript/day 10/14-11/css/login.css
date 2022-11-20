@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+section {
+margin: auto;
+    
+}
+.keypad-section {
+    background-color: rgb(161, 168, 166);
+    height: 90vh;
+    width: 80vh;
+    display: none;
+}
+
+.keypad {
+    display: grid;
+    grid-template-columns: repeat(3, 5fr);
+    gap: 20px;
+    height: 80vh;
+  }
+
+.key {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    text-align: center;
+    margin: 10px;
+    height: 100%;
+    
+}
+.key:hover {
+    background-color: rgb(210, 213, 215);
+}
+.key > span {
+    font-size: 30px;
+    text-align: center;
+}

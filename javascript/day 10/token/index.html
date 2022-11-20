@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <main>
+        <div>
+            <h1 class="user-name"></h1>
+            <section class="forms">
+                <div class="form" id="login-form">
+                    <h3>PLEASE LOGIN</h3>
+                    <label for="email">Email</label>
+                    <input type="email" class="email" />
+                    <label for="password">Password</label>
+                    <input type="password" class="password" />
+                    <button class="btn-login">Login</button>
+                    <br />
+                    <button id="create-account-toggle">Don't have an Account?</button>
+                </div>
+                <div class="form" id="register-form" style="display: none;">
+                    <h3>Welcome, create an account</h3>
+                    <label for="name-reg">Name</label>
+                    <input type="text" class="name-reg" />
+                    <label for="email-reg">Email</label>
+                    <input type="email" class="email-reg" />
+                    <label for="password-reg">Password</label>
+                    <input type="password" class="password-reg" />
+                    <button class="btn-register">Create Account</button>
+                    <br />
+                    <button id="login-toggle">Already have an Account?</button>
+                </div>
+            </section>
+    </main>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

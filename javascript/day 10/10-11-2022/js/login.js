@@ -1,3 +1,4 @@
+
 var CodeProject = {
     code: "",
     tries: 1,
@@ -10,12 +11,13 @@ if (codesJSON) {
         let codes = JSON.parse(codesJSON)
         CodeProject.code = codes
     } catch (e) {
-        console.log(e)
-        updateLS()
+        console.log(e);
+        fetchDefultCode()
     }
 } else {
-    updateLS()
+    updateLS();
 }
+
 function updateLS() {
     localStorage.codes = JSON.stringify(CodeProject.code)
 }
@@ -24,9 +26,13 @@ function updateLS() {
 
 var main = document.querySelector("main");
 var input = document.createElement("input");
-input.type = "number";
+input.type = "text";
 input.maxLength = "4";
+input.minLength = "4"
 input.required = "required";
+input.placeholder = "enter 4 numbers please"
+var rx = /^[0-9]{4,4}$/;
+rx.test(input);
 
 var btn = document.createElement("button");
 btn.innerHTML = "Submit"
@@ -34,7 +40,8 @@ main.append(input, btn);
 
 btn.addEventListener("click", newPass);
 function newPass() {
-    CodeProject.code = input.value
+    CodeProject.code = input.value;
+    updateLS();
 };
 
 btn.addEventListener("click", toggleKeypad);
